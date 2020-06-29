@@ -25,10 +25,14 @@ public class Contact {
   @Column(name = "hobby")
   private String hobby;
 
-  // The contructor method
+  // The contructor default method
+  public Contact() {
+  }
+
   public Contact(String first, String last, String email, long phone, String hobby) {
     this.first = first;
     this.last = last;
+    this.email = email;
     this.phone = phone;
     this.hobby = hobby;
   }
