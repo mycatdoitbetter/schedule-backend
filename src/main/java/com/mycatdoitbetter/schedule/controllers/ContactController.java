@@ -21,12 +21,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.bytebuddy.asm.Advice.Return;
-
 import com.mycatdoitbetter.schedule.models.Contact;
 import com.mycatdoitbetter.schedule.repositories.ContactRepository;
 
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 // @RequestMapping("/api")
 
