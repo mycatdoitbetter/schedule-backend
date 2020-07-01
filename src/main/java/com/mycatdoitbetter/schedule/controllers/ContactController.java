@@ -8,6 +8,7 @@ import javax.xml.ws.Response;
 
 import org.hibernate.internal.util.beans.BeanInfoHelper.ReturningBeanInfoDelegate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -48,6 +49,7 @@ public class ContactController {
   @GetMapping("/contacts")
   public ResponseEntity<List<Contact>> read() {
     try {
+
       List<Contact> contacts = new ArrayList<Contact>();
 
       contactRepository.findAll().forEach(contacts::add);

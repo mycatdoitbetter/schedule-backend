@@ -38,6 +38,10 @@ public class Contact {
   }
 
   // Access methods
+  public Long getId() {
+    return id;
+  }
+
   public String getFirst() {
     return first;
   }
